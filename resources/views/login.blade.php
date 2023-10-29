@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login</title>
+  <title>Halaman Masuk</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <style>
     body {
-      background-image: url('landing/img/full-1.jpg');
+      background-image: url('landing/img/bg-login.jpg');
       background-size: cover;
       background-position: center;
       font-family: 'Lato', sans-serif;
@@ -62,13 +62,13 @@ background-color: #2980b9;
 
   <div class="login-card animate__animated animate__fadeInDown">
     <div style="text-align: center;">
-      <img src="landing/img/logo-dark.png" alt="Logo">
+      <img src="landing/img/logo-login.png" alt="Logo">
     </div>
     <br>
     <br>
     <h1 style="font-size: 1.5rem;
     font-weight: bold;
-    text-align: center;">Admin Login</h1>
+    text-align: center;">Masuk Akun</h1>
     <form method="POST" action="{{ route('login') }}">
       @csrf
 
@@ -88,10 +88,10 @@ background-color: #2980b9;
       
 
       <div class="form-group">
-          <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+          <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Kata Sandi') }}</label>
 
           <div class="form-group" style="white-space: nowrap">
-              <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password">
+              <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Kata Sandi">
 
               @error('password')
                   <span class="invalid-feedback" role="alert">
@@ -106,12 +106,18 @@ background-color: #2980b9;
                   <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                   <label class="form-check-label" for="remember">
-                      {{ __('Remember Me') }}
+                      {{ __('Ingatkan Saya!') }}
                   </label>
               </div>
           
 
-      <button type="submit" class="btn btn-primary btn-block">Log In</button>
+      <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+      <div class="text-center">
+        <a class="custom-control text-gray-500" href="forgot-password.html">Lupa Kata Sandi?</a>
+      </div>
+      <div class="text-center">
+        <a class="custom-control text-gray-500" href="register.html">Daftarkan Akun</a>
+    </div>
   </form>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
