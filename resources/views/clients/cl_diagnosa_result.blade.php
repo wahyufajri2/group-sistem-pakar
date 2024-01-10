@@ -1,5 +1,5 @@
 @extends('clients.cl_main')
-@section('title', 'Form Diagnosa')
+@section('title', 'Hasil Diagnosis')
 
 @section('cl_content')
 
@@ -11,7 +11,7 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Diagnosa ID</th>
+                    <th scope="col">Diagnosis ID</th>
                     <th scope="col">Tingkat Depresi</th>
                   </tr>
                 </thead>

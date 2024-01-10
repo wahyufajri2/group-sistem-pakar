@@ -12,7 +12,7 @@
                         <thead>
                           <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Diagnosa ID</th>
+                            <th scope="col">Diagnosis ID</th>
                             <th scope="col">Tingkat Depresi</th>
                             <th scope="col">Persentase</th>
                           </tr>

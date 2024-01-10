@@ -47,7 +47,7 @@ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function
 		rel="stylesheet" />
 	<link media="print" href="depresi/wp-content/cache/autoptimize/css/autoptimize_5653ccbbff2bf3fde17022871919df8b.css"
 		rel="stylesheet" />
-	<title>Diagnosa Tingkat Depresi</title>
+	<title>Diagnosis Tingkat Depresi</title>
 	<meta name="description"
 		content="Take our depression test if you are feeling overwhelming sadness—it&#039;s free, quick, confidential, and scientifically validated." />
 	<link rel="canonical" href="index.html" />

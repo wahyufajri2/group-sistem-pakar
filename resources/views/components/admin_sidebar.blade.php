@@ -15,7 +15,7 @@
     <li class="nav-item">
       <a class="nav-link collapsed" href="{{ route('cl.form') }}">
         <i class="bi bi-clipboard-check"></i>
-        <span>Diagnosa</span>
+        <span>Diagnosis</span>
       </a>
     </li><!-- End Gejala Page Nav -->
     <li class="nav-item">
