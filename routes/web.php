@@ -79,7 +79,7 @@ Route::get('/form-faq', function () {
         'kondisi_user' => KondisiUser::all()
     ];
 
-    return view('faq', $data);
+    return view('form', $data);
 })->name('cl.form');
 
 Route::resource('/spk', DiagnosaController::class);

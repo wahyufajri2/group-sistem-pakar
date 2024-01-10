@@ -10,7 +10,7 @@
     <!-- Basic Page Needs
  ================================================== -->
     <meta charset="utf-8">
-    <title>Diagnosa Depresi</title>
+    <title>Diagnosis Depresi</title>
     <meta name="description" content="Professional Creative Template" />
     <meta name="author" content="IG Design">
     <meta name="keywords"
@@ -57,7 +57,7 @@
 
     <!-- Favicons
  ================================================== -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" href="{{ asset('/assets/img/logo unisa.png') }}">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
@@ -66,17 +66,6 @@
 </head>
 
 <body class="royal_preloader">
-
-    <!-- <div id="royal_preloader"></div> -->
-
-
-    <!-- Nav and Logo
- ================================================== -->
-
-
-    <!-- MENU
-    ================================================== -->
-
     <nav id="menu-wrap" class="menu-back cbp-af-header">
         <div class="menu">
             <a href="/">
@@ -84,29 +73,21 @@
             </a>
             <ul>
                 <li>
-                    <a class="shadow-hover" href="/dashboard">Dashboard</a>
+                    <a class="shadow-hover" href="#home">Home</a>
                 </li>
                 <li>
-                    <a class="shadow-hover curent-shadow" href="#">Menu</a>
-                    <ul>
-                        <li><a href="/form-faq">Diagnosa</a></li>
-                        <li><a href="/gejala">Gejala</a></li>
-                        <li><a href="/depresi">Depresi</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="shadow-hover" href="/artikel">Artikel</a>
+                    <a class="shadow-hover" href="#tim">Tim</a>
                 </li>
                 <li>
                     <a class="shadow-hover" href="#faq">FAQ</a>
                 </li>
                 <li>
-                    <a class="shadow-hover" href="#kontak">Kontak</a>
+                    <a class="shadow-hover" href="#tentang">Tentang</a>
                 </li>
 
                 @guest()
                 <li>
-                    <a class="shadow-hover" href="/login">Login</span></a>
+                    <a class="shadow-hover" href="/login">Login </span><small>(untuk admin)</small></a>
                 </li>
                 @endguest
             </ul>
@@ -120,8 +101,9 @@
 
         <!-- Hero Section -->
 
+        <section id="home">
         <div class="section full-height mob-height">
-            <div class="background-parallax" style="background-image: url('landing/img/full-2.jpg')"
+            <div class="background-parallax" style="background-image: url('landing/img/bg-home.jpg')"
                 data-enllax-ratio=".5" data-enllax-type="background" data-enllax-direction="vertical"></div>
             <div class="hero-center-text-wrap">
                 <div class="container text-left">
@@ -140,79 +122,25 @@
                               </style>
                               <div style="margin-left: 12px">
 
-                                <a href="/form-faq"  class="btn btn-dark btn-glow" role="button" style="color: rgb(218, 116, 22);">
-                                  Isi form
+                                <a href="/form"  class="btn btn-dark btn-glow" role="button" style="color: rgb(255, 140, 32)">
+                                  Cek Depresimu Sekarang
                                 </a>
                               </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="#top-scroll" data-gal="m_PageScroll2id">
-                <div class="scroll-to-next">ke bawah <i class="fa fa-long-arrow-down"></i></div>
-            </a>
         </div>
+    </section>
 
-        <!-- Portfolio -->
 
-
-        <!-- Hero Section -->
-
-        <div class="section padding-top-big padding-bottom-big">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 page-center-text-wrap text-center">
-                        <h1 class="parallax"><strong>-</strong> Project akhir semester mata kuliah
-                            <strong>-</strong><br><span>sistem pakar</span></h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section padding-top-bottom-big background-dark">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 text-center">
-                        <div id="owl-sep-1" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="quote">
-                                    <p class="lead">"DepresiCheck adalah situs yang membantu mahasiswa akhir mengukur
-                                        tingkat depresi mereka dengan mengisi formulir pertanyaan. Kami percaya bahwa
-                                        mengetahui tingkat depresi Anda adalah langkah pertama dalam menemukan solusi
-                                        dan menangani masalah ini. Selain itu, kami juga menyediakan informasi dan
-                                        sumber daya yang berguna untuk membantu Anda dalam mengelola depresi Anda."</p>
-                                    <h6>
-                                        <h6>&rarr;</h6>
-                                    </h6>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="quote">
-                                    <p class="lead">"Ingatlah bahwa DepresiCheck bukanlah pengganti layanan
-                                        profesional, jadi pastikan untuk selalu mencari bantuan medis yang tepat jika
-                                        Anda mengalami gejala depresi."</p>
-                                    <h6>&rarr;</h6>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="quote">
-                                    <p class="lead">"Kami membuat DepresiCheck sebagai proyek akhir untuk membantu
-                                        teman-teman kami yang mungkin mengalami depresi untuk mengetahui tingkat depresi
-                                        mereka dan menemukan solusi sesuai."</p>
-                                    <h6>&rarr;</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <!-- Tim Section -->
+        <section id="tim">
         <div class="section padding-top-big">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-5 text-center mb-5">
-                        <h4>Kelompok X</h4>
+                        <h4>Kelompok 1</h4>
                         <p class="lead">Sistem Pakar</p>
                     </div>
                 </div>
@@ -221,9 +149,9 @@
                 <div class="row">
                     <div class="col text-center">
                         <div class="team-wrap">
-                            <img src="landing/img/team2.jpg" alt="">
-                            <p>Ketua</p>
-                            <h6>Alfi Atqia Rinjani</h6>
+                            <img src="landing/img/wahyu.jpg" alt="Foto Wahyu Fajri">
+                            <p>Anggota 0</p>
+                            <h6>Wahyu Fajri</h6>
                             <div class="social-team">
                                 <ul class="list-social-team">
                                     <li class="icon-team tipped" data-title="<span>github</span>"
@@ -240,16 +168,16 @@
                     </div>
                     <div class="col mt-4 m-xl-0 text-center">
                         <div class="team-wrap">
-                            <img src="landing/img/team4.jpg" alt="">
-                            <p>Web Development</p>
-                            <h6>Andrian</h6>
+                            <img src="landing/img/yoginda.jpg" alt="Foto Yoginda Putri Bektiningsih">
+                            <p>Anggota 1</p>
+                            <h6>Yoginda Putri Bektiningsih</h6>
                             <div class="social-team">
                                 <ul class="list-social-team">
                                     <li class="icon-team tipped" data-title="<span>twitter</span>"
                                         data-tipper-options='{"direction":"bottom","follow":"true","margin":25}'>
                                         <a href="#">&#xf099;</a>
                                     </li>
-                                    <li class="icon-team tipped" data-title="<span>facebook</span>"
+                                    <li class="icon-team tipped" data-title="<span>istagram</span>"
                                         data-tipper-options='{"direction":"bottom","follow":"true","margin":25}'>
                                         <a href="#">&#xf09a;</a>
                                     </li>
@@ -259,9 +187,9 @@
                     </div>
                     <div class="col mt-4 m-md-0 text-center">
                         <div class="team-wrap">
-                            <img src="landing/img/team3.jpg" alt="">
-                            <p>Design process</p>
-                            <h6>Canggih Wahyu Rinaldi</h6>
+                            <img src="landing/img/naufal.jpg" alt="Foto Naufal Cahyo Pradana D">
+                            <p>Anggota 2</p>
+                            <h6>Naufal Cahyo Pradana D</h6>
                             <div class="social-team">
                                 <ul class="list-social-team">
                                     <li class="icon-team tipped" data-title="<span>github</span>"
@@ -280,33 +208,69 @@
                             </div>
                         </div>
                     </div>
-
-
-                </div>
-            </div>
-        </div>
-
-        <div class="section padding-top-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="full-line"></div>
+                    <div class="col mt-4 m-md-0 text-center">
+                        <div class="team-wrap">
+                            <img src="landing/img/naufalF.jpg" alt="Foto Naufal fadhila">
+                            <p>Anggota 3</p>
+                            <h6>Naufal fadhila</h6>
+                            <div class="social-team">
+                                <ul class="list-social-team">
+                                    <li class="icon-team tipped" data-title="<span>github</span>"
+                                        data-tipper-options='{"direction":"bottom","follow":"true","margin":25}'>
+                                        <a href="#">&#xf09b;</a>
+                                    </li>
+                                    <li class="icon-team tipped" data-title="<span>pinterest</span>"
+                                        data-tipper-options='{"direction":"bottom","follow":"true","margin":25}'>
+                                        <a href="#">&#xf231;</a>
+                                    </li>
+                                    <li class="icon-team tipped" data-title="<span>facebook</span>"
+                                        data-tipper-options='{"direction":"bottom","follow":"true","margin":25}'>
+                                        <a href="#">&#xf09a;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mt-4 m-md-0 text-center">
+                        <div class="team-wrap">
+                            <img src="landing/img/ahmad.jpg" alt="Foto Ahmad Lamsia">
+                            <p>Anggota 4</p>
+                            <h6>Ahmad Lamsia</h6>
+                            <div class="social-team">
+                                <ul class="list-social-team">
+                                    <li class="icon-team tipped" data-title="<span>github</span>"
+                                        data-tipper-options='{"direction":"bottom","follow":"true","margin":25}'>
+                                        <a href="#">&#xf09b;</a>
+                                    </li>
+                                    <li class="icon-team tipped" data-title="<span>pinterest</span>"
+                                        data-tipper-options='{"direction":"bottom","follow":"true","margin":25}'>
+                                        <a href="#">&#xf231;</a>
+                                    </li>
+                                    <li class="icon-team tipped" data-title="<span>facebook</span>"
+                                        data-tipper-options='{"direction":"bottom","follow":"true","margin":25}'>
+                                        <a href="#">&#xf09a;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
         <!-- FAQ Section -->
-        <section id="faq" class="bg-light py-5">
+        <section id="faq">
+            <div class="section padding-top-big">
             <div class="container">
-                <h2 class="text-center mb-5">Pertanyaan yang Sering Diajukan - FAQ</h2>
+                <h2 class="text-center">Pertanyaan yang Sering Diajukan - FAQ</h2>
                 <div class="accordion" id="faqAccordion">
                     <div class="card">
                         <div class="card-header" id="headingOne">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Apa itu DepresiCheck?
+                                    Apa itu DepresiGauge?
                                 </button>
                             </h2>
                         </div>
@@ -314,7 +278,7 @@
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                             data-parent="#faqAccordion">
                             <div class="card-body">
-                                DepresiCheck adalah sebuah situs yang membantu mahasiswa akhir mengukur tingkat depresi
+                                DepresiGauge adalah sebuah situs yang membantu mahasiswa akhir mengukur tingkat depresi
                                 mereka dengan mengisi formulir pertanyaan. Kami menyediakan solusi sesuai setelah
                                 mahasiswa mengisi formulir tersebut.
                             </div>
@@ -325,14 +289,14 @@
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Siapa yang bisa mengakses DepresiCheck?
+                                    Siapa yang bisa mengakses DepresiGauge?
                                 </button>
                             </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#faqAccordion">
                             <div class="card-body">
-                                DepresiCheck ditujukan untuk mahasiswa akhir, namun siapa saja dapat mengakses situs ini
+                                DepresiGauge ditujukan untuk mahasiswa akhir, namun siapa saja dapat mengakses situs ini
                                 dan mengisi formulir untuk mengetahui tingkat depresi mereka.
                             </div>
                         </div>
@@ -342,14 +306,14 @@
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Apakah hasil dari DepresiCheck dapat diandalkan?
+                                    Apakah hasil dari DepresiGauge dapat diandalkan?
                                 </button>
                             </h2>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#faqAccordion">
                             <div class="card-body">
-                                Hasil dari DepresiCheck adalah sebuah estimasi dari tingkat depresi seseorang, dan tidak
+                                Hasil dari DepresiGauge adalah sebuah estimasi dari tingkat depresi seseorang, dan tidak
                                 bisa dianggap sebagai diagnosis yang pasti. Kami sangat menyarankan agar seseorang yang
                                 merasa memiliki tingkat depresi yang tinggi untuk segera meminta bantuan profesional.
                             </div>
@@ -360,7 +324,7 @@
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Bagaimana cara mengakses solusi yang ditawarkan DepresiCheck?
+                                    Bagaimana cara mengakses solusi yang ditawarkan DepresiGauge?
                                 </button>
                             </h2>
                         </div>
@@ -376,80 +340,60 @@
                 </div>
             </div>
             </div>
+        </div>
         </section>
 
-
-
-
-
-
-        <div class="section footer padding-top-big background-image-cover"
-            style="background-image: url(img/footer.jpg);">
+        <!-- Tentang Section -->
+        <section id="tentang">
+        <div class="section padding-top-big padding-bottom-big">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <img src="landing/img/logo-light.png" alt="logo image" />
-                    </div>
-                    <div class="col-md-12 my-4">
-                        <ul class="footer-social">
-                            <li>
-                                <a href="#">Tw</a>
-                            </li>
-                            <li>
-                                <a href="#">Fb</a>
-                            </li>
-                            <li>
-                                <a href="#">G+</a>
-                            </li>
-                            <li>
-                                <a href="#">Vm</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-12 mt-5">
-                        <div class="footer-line"></div>
-                    </div>
-                    <div class="col-md-12 rights my-3">
+                    <div class="col-md-12 page-center-text-wrap text-center">
+                        <h1 class="parallax"><strong>-</strong> Project Case Based Learning
+                            <strong>-</strong><br><span>Sistem Pakar</span></h1>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-        <div class="section footer padding-top-big background-image-cover"
-            style="background-image: url(landing/img/footer.jpg);">
+        <div class="section padding-top-bottom-big background-dark">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <img src="landing/img/logo-light.png" alt="logo image" />
-                    </div>
-                    <div class="col-md-12 my-4">
-                        <ul class="footer-social">
-                            <li>
-                                <a href="#">Tw</a>
-                            </li>
-                            <li>
-                                <a href="#">Fb</a>
-                            </li>
-                            <li>
-                                <a href="#">G+</a>
-                            </li>
-                            <li>
-                                <a href="#">Vm</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-12 mt-5">
-                        <div class="footer-line"></div>
-                    </div>
-                    <div class="col-md-12 rights my-3">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <div id="owl-sep-1" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="quote">
+                                    <p class="lead">"DepresiGauge adalah situs yang membantu mahasiswa akhir mengukur
+                                        tingkat depresi mereka dengan mengisi formulir pertanyaan. Kami percaya bahwa
+                                        mengetahui tingkat depresi Anda adalah langkah pertama dalam menemukan solusi
+                                        dan menangani masalah ini. Selain itu, kami juga menyediakan informasi dan
+                                        sumber daya yang berguna untuk membantu Anda dalam mengelola depresi Anda."</p>
+                                    <h6>
+                                        <h6>&rarr;</h6>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="quote">
+                                    <p class="lead">"Ingatlah bahwa DepresiGauge bukanlah pengganti layanan
+                                        profesional, jadi pastikan untuk selalu mencari bantuan medis yang tepat jika
+                                        Anda mengalami gejala depresi."</p>
+                                    <h6>&rarr;</h6>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="quote">
+                                    <p class="lead">"Kami membuat DepresiGauge sebagai proyek akhir mata kuliah Sistem Pakar untuk membantu
+                                        teman-teman kami yang mungkin mengalami depresi untuk mengetahui tingkat depresi
+                                        mereka dan menemukan solusi sesuai."</p>
+                                    <h6>&rarr;</h6>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    </section>
     </main>
 
 
@@ -465,7 +409,7 @@
         // Type text
 
         var typed = new Typed('#typed-1', {
-            strings: ['diagnosa', 'solusi', 'atasi'],
+            strings: ['diagnosis', 'solusi', 'atasi'],
             typeSpeed: 45,
             backSpeed: 0,
             startDelay: 200,
@@ -473,7 +417,7 @@
             loop: true,
             loopCount: false,
             showCursor: true,
-            cursorChar: "_",
+            cursorChar: "",
             attr: null
         });
     </script>
