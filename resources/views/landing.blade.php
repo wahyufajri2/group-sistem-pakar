@@ -123,7 +123,7 @@
                               <div style="margin-left: 12px">
 
                                 <a href="/form"  class="btn btn-dark btn-glow" role="button" style="color: rgb(255, 140, 32)">
-                                  Cek Depresimu Sekarang
+                                  Cek Depresimu Sekarang Juga
                                 </a>
                               </div>
                         </div>
