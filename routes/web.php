@@ -73,7 +73,7 @@ Route::get('/form', function () {
     return view('form', $data);
 });
 
-Route::get('/form-faq', function () {
+Route::get('/form', function () {
     $data = [
         'gejala' => Gejala::all(),
         'kondisi_user' => KondisiUser::all()

@@ -46,7 +46,12 @@
         <div >
             <a style="align-content: flex-end" href="/form" class="btn btn-secondary">Kembali</a>
             <a style="align-content: flex-end" href="/" class="btn btn-primary">Home</a>
+            <a style="align-content: flex-end" id="print" class="btn btn-warning">Print</a>
         </div>
        </div>
     </div>
+    <script>
+      var myElement = document.getElementById('.print');
+      window.print(myElement);
+    </script>
 @endsection
